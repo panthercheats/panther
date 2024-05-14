@@ -10,7 +10,8 @@
             padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
-            background: #000 url('https://i.imgur.com/bbpteZN.png') no-repeat center center / cover;
+            background: url('https://i.imgur.com/bbpteZN.png') no-repeat center center fixed;
+            background-size: cover;
             color: white;
             display: flex;
             flex-direction: column;
@@ -89,49 +90,4 @@
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="hamburger" onclick="openMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div class="menu" id="menu">
-        <span class="close-btn" onclick="closeMenu()">&times;</span>
-        <a href="#">About</a>
-        <a href="#">Direct Installs</a>
-        <a href="#">DNS</a>
-        <a href="#">Certificates</a>
-        <a href="#">Other Discord Servers</a>
-    </div>
-    <div class="logo">
-        <img src="your-logo-url.png" alt="Panther Logo"> <!-- Add the logo URL here -->
-    </div>
-    <div class="text-block">
-        <h1>Panther's Cheats</h1>
-        <p>made by @pantherthefrenchie on Discord!</p>
-        <h2>Update 1.2</h2>
-        <p>Added 3 DNS</p>
-        <h2>DNS</h2>
-        <p>Panther's DNS</p>
-    </div>
-    <div class="buttons">
-        <a href="#" class="button">Beacons</a>
-        <a href="#" class="button">Try for free!</a>
-    </div>
-
-    <script>
-        function openMenu() {
-            document.getElementById('menu').style.display = 'flex';
-        }
-
-        function closeMenu() {
-            document.getElementById('menu').style.display = 'none';
-        }
-    </script>
-</body>
-</html>
+            cursor: po
