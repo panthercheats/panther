@@ -7,9 +7,9 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #001f3f; /* Dark blue background */
-            color: #fff; /* White text color for readability */
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #001f3f, #000);
+            color: #fff;
             text-align: center;
         }
 
@@ -17,10 +17,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #000;
+            background: rgba(0, 0, 0, 0.9);
             padding: 10px 20px;
             color: #fff;
             position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         header .logo img {
@@ -39,13 +40,16 @@
             font-size: 20px;
             margin-left: 10px;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .menu-btn span {
             display: block;
             width: 25px;
             height: 3px;
-            margin: 5px;
+            margin: 3px;
             background: #fff;
             transition: 0.4s;
         }
@@ -65,23 +69,25 @@
         .nav-links {
             display: none;
             flex-direction: column;
-            background: #000;
+            background: rgba(0, 0, 0, 0.9);
             position: absolute;
-            top: 50px;
+            top: 60px;
             right: 20px;
             padding: 10px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .nav-links a {
             color: #fff;
             text-decoration: none;
             padding: 10px;
+            transition: background 0.3s;
         }
 
         .nav-links a:hover {
             background: #333;
+            border-radius: 4px;
         }
 
         .nav-links.show {
@@ -90,11 +96,8 @@
 
         .hero {
             position: relative;
-        }
-
-        .hero img {
-            width: 100%;
-            height: auto;
+            height: 50vh;
+            background: url('path/to/hero-image.jpg') no-repeat center center/cover;
         }
 
         .hero-text {
@@ -117,13 +120,14 @@
 
         .hero-text p {
             margin: 5px 0;
+            font-size: 1.2em;
         }
 
         .content {
-            background: #fff;
-            color: #000; /* Black text color for content readability */
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin: 20px auto;
             max-width: 600px;
             border-radius: 8px;
@@ -142,10 +146,15 @@
         }
 
         .content ul li {
-            background: #eee;
+            background: rgba(255, 255, 255, 0.2);
             padding: 10px;
             margin: 5px 0;
             border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .content ul li:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
     </style>
 </head>
@@ -170,7 +179,6 @@
     </header>
     <main>
         <div class="hero">
-            <img src="path/to/hero-image.jpg" alt="Hero Image">
             <div class="hero-text">
                 <h1>PANTHER</h1>
                 <p>Panther's Cheats</p>
